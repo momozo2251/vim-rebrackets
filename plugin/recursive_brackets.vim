@@ -1,1 +1,1 @@
-command! -nargs=* RecursiveBrackets :call s:RecursiveBracketsMain(<f-args>)
+command! -nargs=* RecursiveBrackets call recursive_brackets#RecursiveBracketsMain(<f-args>)

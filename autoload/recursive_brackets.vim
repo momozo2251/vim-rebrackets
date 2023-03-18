@@ -1,4 +1,4 @@
-function! s:RecursiveBracketsMain(message, count)
+function! recursive_brackets#RecursiveBracketsMain(message, count)
   const result = s:RecursiveBrackets(a:message, a:count, a:message)
   s:SetRegister(result)
 endfunction
@@ -12,6 +12,6 @@ function! s:RecursiveBrackets(message, count, result)
 endfunction
 
 function! s:SetRegister(message)
-  let @* = s:message
-  let @" = s:message
+  let @* = message
+  let @" = message
 endfunction
