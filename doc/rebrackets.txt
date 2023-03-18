@@ -1,0 +1,50 @@
+*rebrackets.txt*  A Vim plugin for recursive brackets.
+
+
+                  Vim Rebrackets
+
+
+Author:            momozo2251 <https://momozo.tech/>
+Plugin Homepage:   <https://github.com/momozo2251/vim-rebrackets>
+
+===============================================================================
+CONTENTS                                                   *RebracketsContents*
+
+  1.  Introduction ................. |RebracketsIntroduction|
+  2.  Installation ................. |RebracketsInstallation|
+  3.  Usage ........................ |RebracketsUsage|
+  4.  Commands ..................... |RebracketsCommands|
+
+===============================================================================
+1. INTRODUCTION                                        *RebracketsIntroduction*
+
+
+This plugin is designed to make it easier and more emphatic to type the
+parentheses syntax, which is Japanese slang.
+Users can yank the sentence they want by executing a single command.
+
+===============================================================================
+2. INSTALLATION                                        *RebracketsInstallation*
+
+Pathogen:
+>
+  git clone https://github.com/momozo2251/vim-rebrackets.git \
+            ~/.vim/bundle/vim-rebrackets
+<
+
+vim-plug:
+  1. Add Plug 'momozo2251/vim-rebrackets' to .vimrc
+  2. Run :PlugInstall
+
+===============================================================================
+3. USAGE                                                      *RebracketsUsage*
+
+You don't have to do anything: it just works.
+
+===============================================================================
+4. COMMANDS                                                *RebracketsCommands*
+
+Commands for using Rebrackets
+
+  :RecursiveBrackets [WORD] [COUNT]                        *:RecursiveBrackets*
+      Words enclosed in recursive parentheses are yanked
