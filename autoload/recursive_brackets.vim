@@ -1,6 +1,7 @@
 function! recursive_brackets#RecursiveBracketsMain(message, count)
   const result = s:RecursiveBrackets(a:message, a:count, a:message)
-  s:SetRegister(result)
+  call s:SetRegister(result)
+  echo 'yanked: ' . result
 endfunction
 
 function! s:RecursiveBrackets(message, count, result)
@@ -12,6 +13,6 @@ function! s:RecursiveBrackets(message, count, result)
 endfunction
 
 function! s:SetRegister(message)
-  let @* = message
-  let @" = message
+  let @* = a:message
+  let @" = a:message
 endfunction
